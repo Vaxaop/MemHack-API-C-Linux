@@ -5,7 +5,7 @@
 
 int main(int argc, char ** argv) {
     ulongl addr = 0x5565200c0010;
-    uint processID = GetTargetPid("main");
+    uint processID = GetTargetPid("TestProgramme");
     printf("The pid of the test programme is : %d\n", processID);
     void * value_read = RPM(addr, sizeof(int));
     printf("The value read = %d\n", *(int*)value_read);
