@@ -12,7 +12,7 @@ int main(int argc, char ** argv) {
     printf("The value read = %d\n", *(int*)value_read);
     
     int write_value = 1234;
-    WPM(addr, &write_value , sizeof(write_value ));
+    WPM(addr, &write_value , sizeof(write_value));
     printf("value just got write to it\n");
     
     free(value_read);
